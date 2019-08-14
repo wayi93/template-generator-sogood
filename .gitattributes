@@ -1,0 +1,7 @@
+src/css/* linguist-vendored
+src/images/* linguist-vendored
+src/images_category/* linguist-vendored
+src/images_product/* linguist-vendored
+src/~/* linguist-vendored
+src/webfonts/* linguist-vendored
+node_modules/* linguist-vendored

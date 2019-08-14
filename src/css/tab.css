@@ -1,0 +1,129 @@
+.tab-container {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.tabs {
+  position: relative;
+  overflow: hidden;
+}
+
+#tab-container > ul >li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  /* background: #f7f7f7; */
+}
+
+#tab-container > ul > li a {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #434343;
+}
+
+#content1,
+#content2 {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  border-top: 3px solid #434343;
+  box-sizing: border-box;
+  padding: 10px;
+  display: none;
+  width: 100%;
+  background: #fff;
+}
+
+#content1:target,
+#content2:target {
+  display: block;
+}
+
+#content1.active {
+  display: block;
+}
+
+.active ~ .tabs li:first-child {
+  background: #434343;
+  color: #fff;
+}
+
+#content1:target ~ .tabs li {
+  background: #f7f7f7;
+  color: #000;
+}
+#content1:target ~ .tabs li:first-child {
+  background: #434343;
+  color: #fff;
+}
+#content1:target ~ .tabs li:first-child > a { color: #fff; }
+
+#content2:target ~ .tabs li {
+  background: #f7f7f7;
+  color: #000;
+}
+#content2:target ~ .tabs li:last-child {
+  background: #434343;
+  color: #fff;
+}
+#content2:target ~ .tabs li:last-child > a { color: #fff; }
+
+.tab-content-wrap {
+  /* position: absolute; */
+  overflow: hidden;
+  top: 36px;
+  width: 100%;
+  border: 1px solid #434343;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+
+/* 自适应部分 */
+@media (max-width: 767px) {
+	#tab-container > ul > li a, #tab-container > ul > li {
+	  line-height: 30px;
+	  font-size: 12px;
+	}
+	#content1, #content2 {
+	  top: 30px;
+	  margin-bottom: 0px;
+	}
+}
+@media (min-width: 768px) {
+	#tab-container > ul > li a, #tab-container > ul > li {
+	  line-height: 30px;
+	  font-size: 14px;
+	}
+	#content1, #content2 {
+	  top: 30px;
+	  margin-bottom: 20px;
+	}
+}
+@media (min-width: 992px) {
+	#tab-container > ul > li a, #tab-container > ul > li {
+	  line-height: 36px;
+	  font-size: 16px;
+	}
+	#content1, #content2 {
+	  top: 36px;
+	  margin-bottom: 20px;
+	}
+}
+@media (min-width: 1200px) {
+	#tab-container > ul > li a, #tab-container > ul > li {
+	  line-height: 36px;
+	  font-size: 18px;
+	}
+	#content1, #content2 {
+	  top: 36px;
+	  margin-bottom: 20px;
+	}
+}
+
+
+
+
