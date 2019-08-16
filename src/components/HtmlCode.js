@@ -239,7 +239,7 @@ class HtmlCode extends Component {
 
       let htmlCodeResult = '<meta charset="utf-8">'+
       '<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">'+
-      '<link rel="stylesheet" type="text/css" media="all" href="https://sogood.idealhit.com/eBayTemplates/2019/css/style.css">'+
+      '<link rel="stylesheet" type="text/css" media="all" href="https://manufacture-shop-pictures.s3.eu-central-1.amazonaws.com/ebay-template-v18.01/style.css">'+
       '<body>'+
       '<div class="container">'+
       '<div class="row padding-t-15 padding-b-15">';
